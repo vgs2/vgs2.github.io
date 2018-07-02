@@ -1,69 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt">
 
 <head>
     <title>Viagem!</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">Bora viajar</a>
-            </div>
-            <ul class="nav navbar-nav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-                <li>
-                    <a href="index.html">Cronograma</a>
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Bora viajar</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto">
+
+                <li "nav-item">
+                    <a class="nav-link" href="index.html">Cronograma</a>
                 </li>
 
-                <li role="presentation" class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <li role="presentation" class="nav-item dropdown">
+                    <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                         Lencois
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="inacio.html">Morro do Pai Inacio</a>
+                            <a class="nav-link" href="inacio.html">Morro do Pai Inacio</a>
                         </li>
                         <li>
-                            <a href="sossego.html">Cachoeira do Sossego</a>
+                            <a class="nav-link" href="sossego.html">Cachoeira do Sossego</a>
                         </li>
                         <li>
-                            <a href="mosquito.html">Cachoeira do Mosquito</a>
+                            <a class="nav-link" href="mosquito.html">Cachoeira do Mosquito</a>
                         </li>
 
                     </ul>
                 </li>
-                <li role="presentation" class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <li role="presentation" class="nav-item dropdown">
+                    <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                         Ibicoara
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="buracao.html">Buracao</a>
+                            <a class="nav-link" href="buracao.html">Buracao</a>
                         </li>
                         <li>
-                            <a href="fumacinha.html">Fumacinha</a>
+                            <a class="nav-link" href="fumacinha.html">Fumacinha</a>
                         </li>
 
                     </ul>
                 </li>
             </ul>
         </div>
+
     </nav>
 
     <div class="container">
-        <h1>Site da nossa viagem!</h1>
+        <h1 style="text-align: center;">
+            <b>Site da nossa viagem!</b>
+        </h1>
 
-        <div id="myCarousel" class="carousel slide" data-ride="carousel" role="listbox" style="max-width:900px; max-height:500px !important;">
+        <div id="myCarousel" class="carousel slide carousel-fade center-image" data-ride="carousel" role="listbox" style="max-width:900px; max-height:500px !important;">
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -73,92 +81,128 @@
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-                <div class="item active" style="max-width:900px; max-height:450px">
-                    <img src="images/pati.jpg" alt="Los Angeles">
+                <div class="carousel-item active" style="max-width:900px; max-height:450px">
+                    <img src="images/pati.jpg" alt="Vale do Pati">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Vale do Pati</p>
+                    </div>
                 </div>
 
-                <div class="item" style="max-width:900px; max-height:450px">
-                    <img src="images/buracao.jpg" alt="Chicago">
+                <div class="carousel-item" style="max-width:900px; max-height:450px">
+                    <img src="images/buracao.jpg" alt="Buracao">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Cachoeira do Buracao</p>
+                    </div>
                 </div>
 
-                <div class="item" style="max-width:900px; max-height:450px">
-                    <img src="images/mosquito.jpg" alt="New York">
+                <div class="carousel-item" style="max-width:900px; max-height:450px">
+                    <img src="images/mosquito.jpg" alt="Mosquito"> container-adjust
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Cachoeira do Mosquito</p>
+                    </div>
                 </div>
             </div>
 
             <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
                 <span class="sr-only">Next</span>
             </a>
         </div>
-<p></p>
-        <p>Pessoal, vou tentar reunir aqui algumas informacoes pra a nossa viagem, focando no cronograma e informacoes sobre
-            as trilhas</p>
+    </div>
+    <div class="container">
+        <div class="main-texts">
             <p></p>
-        <div>
-                <h2>Cronograma</h2>
+            <p>Pessoal, vou tentar reunir aqui algumas informacoes pra a nossa viagem, focando no cronograma e informacoes sobre
+                as trilhas</p>
+            <p></p>
+            <div>
+                <h2><b>Cronograma</b></h2>
                 <p></p>
-            <h3>Ida</h3>
+                <h3>Ida</h3>
+                <ul>
+                    <li>21/07 </li>
+                    <li>22/07..</li>
+                </ul>
+            </div>
+
+            <h3>Lencois</h3>
             <ul>
-                <li>21/07 </li>
-                <li>22/07..</li>
+                <li>..22/07 Chegada em Lencois no fim da tarde, Morro do Pai Inácio</li>
+                <li>23/07 Cachoeira do sossego
+                    <a href="https://pt.wikiloc.com/trilhas-trekking/pn-chapada-diamantina-cachoeira-do-sossego-22332805">(trilha)</a>
+                </li>
+                <li>24/07 Cachoeira da Mixila (com pernoite)
+                    <a href="https://pt.wikiloc.com/trilhas-trekking/pn-chapada-diamantina-cachoeira-do-mixila-23902956">(trilha)</a>
+                </li>
+                <li>25/07 Volta da Mixila e Cachoeira do Mosquito</li>
+                <li>Uma alternativa aos dois dias da Mixila, seria apenas um dia vendo Mosquito e Lapa Doce ou algum outro lugar</li>
+            </ul>
+
+            <h3>Vale do Pati/Capao</h3>
+            <p></p>
+            <ul>
+                <li>26/07 Travessia do Vale do Pati
+                    <a href="https://pt.wikiloc.com/trilhas-trekking/vale-do-pati-4-dias-chapada-diamantina-12529146">(trilha)</a>: Bomba, Gerais do Vieira, Quebra Bunda e Gerais do Rio Pedro, casa do Sr. Wilson</li>
+                <li>27/07 Travessia do Vale do Pati: Cachoeirão por Cima, Rio Funis, Cachoeira do Funis, casa do Aguinaldo</li>
+                <li>28/07 Travessia do Vale do Pati: Morro do Castelo, Gruta do Morro do Castelo</li>
+                <li>29/07 Travessia do Vale do Pati: Cachoeira do Calixto</li>
+                <li>30/07 Cachoeira da Fumaca
+                    <a href="https:/uto/pt.wikiloc.com/trilhas-trekking/pn-chapada-diamantina-cachoeira-da-fumaca-21938825">(trilha)</a>
+                </li>
+
+            </ul>
+            <h3>Andarai/Mucuge</h3>
+            <ul>
+                <li>(?) Cachoeira dos Funis, das Andorinhas e Cânion das Sete Quedas</li>
+                <li>31/07 Cachoeira das Três Barras I, dos Cristais e Bequinho
+                    <a href="https://pt.wikiloc.com/trilhas-trekking/cachoeiras-tres-barras-e-cristais-chapada-diamantina-12275861">(trilha)</a>
+                </li>
+                <li>01/08 Cachoeira Encantada
+                    <a href="https://pt.wikiloc.com/trilhas-trekking/pn-chapada-diamantina-cachoeira-encantada-21465008">(trilha)</a>
+                </li>
+                <li>(?) Cachoeira do Herculano
+                    <a href="https://pt.wikiloc.com/trilhas-trekking/pn-chapada-diamantina-cachoeira-do-herculano-21938521">(trilha)</a>
+                </li>
+            </ul>
+
+            <h3>Ibicoara</h3>
+            <ul>
+                <li>02/08 Fumacinha
+                    <a href="https://pt.wikiloc.com/trilhas-trekking/cachoeira-da-fumacinha-chapada-diamantina-12277227">(trilha)</a>
+                </li>
+                <li>03/08 Buracao
+                    <a href="https://pt.wikiloc.com/trilhas-trekking/chapada-diamantina-cachoeira-do-buracao-16284331">(trilha)</a>
+                </li>
+            </ul>
+            <h3>Links de interesse</h3>
+            <ul>
+                <li>
+                    <a href="http://www.guiachapadadiamantina.com.br/conheca-os-atrativos-mais-visitados-e-as-belezas-de-cada-cidade/">Atrativos mais visitados</a>
+                </li>
+            </ul>
+            <h3>Observacoes</h3>
+            <ul>
+                <li>Se precisar cortar algo a mais, voces que decidam</li>
+                <li>PESQUISEM AS TRILHAS SEUS ARROMBADOS</li>
+                <li>Em um cenario ideal, todo mundo deveria baixar o Wikilocs e comprar o pacote de 3 meses (7 reais e da acesso
+                    as trilhas com GPS) </li>
             </ul>
         </div>
-        
-        <h3>Lencois</h3>
-        <ul>
-            <li>..22/07 Chegada em Lencois no fim da tarde, Morro do Pai Inácio</li>
-            <li>23/07 Cachoeira do sossego</li>
-            <li>24/07 Cachoeira da Mixila (com pernoite)</li>
-            <li>25/07 Volta da Mixila e Cachoeira do Mosquito</li>
-            <li>Uma alternativa aos dois dias da Mixila, seria apenas um dia vendo Mosquito e Lapa Doce ou algum outro lugar</li>
-        </ul>
-        
-        <h3>Vale do Pati/Capao</h3>
-        <p></p>
-        <ul>
-            <li>26/07 Travessia do Vale do Pati: Bomba, Gerais do Vieira, Quebra Bunda e Gerais do Rio Pedro, casa do Sr. Wilson</li>
-            <li>27/07 Travessia do Vale do Pati: Cachoeirão por Cima, Rio Funis,  Cachoeira do Funis, casa do Aguinaldo</li>
-            <li>28/07 Travessia do Vale do Pati: Morro do Castelo, Gruta do Morro do Castelo</li>
-            <li>29/07 Travessia do Vale do Pati: Cachoeira do Calixto</li>
-            <li>30/07 Cachoeira da Fumaca</li>
-            <p>Nota: aqui ha um certo problema: pra fazer a travessia do Vale do Pati, precisaremos deixar o carro em Andarai e apartir de la fazermos a travessia
-                ate chegarmos ao vale do Capao, onde pegaremos um onibus de volta a Andarai, pegaremos o carro, voltaremos para o Vale do Capao e faremos a Fumaca
-            </p>
-        </ul>
-        <h3>Andarai/Mucuge</h3>
-        <ul>
-            <li>(?) Cachoeira dos Funis, das Andorinhas e Cânion das Sete Quedas</li>
-            <li>31/07 Cachoeira das Três Barras I, dos Cristais e Bequinho</li>
-            <li>01/08 Cachoeira do Herculano</li>
-        </ul>
-        
-        <h3>Ibicoara</h3>
-        <ul>
-            <li>02/08 Fumacinha</li>
-            <li>03/08 Buracao</li>
-        </ul>
-        <h3>Links de interesse</h3>
-        <ul>
-            <li>
-                <a href="http://www.guiachapadadiamantina.com.br/conheca-os-atrativos-mais-visitados-e-as-belezas-de-cada-cidade/">Atrativos mais visitados</a>
-            </li>
-        </ul>
-        <h3>Observacoes</h3>
-        <ul>
-            <li>Se precisar cortar algo a mais, voces que decidam</li>
-            <li>PESQUISEM AS TRILHAS SEUS ARROMBADOS</li>
-            <li>Em um cenario ideal, todo mundo deveria baixar o Wikilocs e comprar o pacote de 3 meses (7 reais e da acesso
-                as trilhas com GPS) </li>
-        </ul>
         <p></p>
         <p></p>
     </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
 
 </body>
 
