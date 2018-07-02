@@ -25,14 +25,16 @@
     margin-right: auto;
 }
 
-body{
-    background-image: url("images/background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    
+body { background-color: transparent; }
 
-}
+html { 
+    background: url(images/background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+    
 
 h1{
     background-color: rgb(223, 238, 252);
