@@ -7,7 +7,7 @@
 
 .container {
     margin-top: 20px;
-    background-color: white;
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 25px;
     padding: 20px;
     border-style: double;
@@ -16,6 +16,7 @@
 .carousel {
     border-radius: 10px 10px 10px 10px;
     overflow: hidden;
+    
     
 }
 
